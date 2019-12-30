@@ -14,10 +14,13 @@ window.addEventListener('keydown', function(e) {
 });
 
 
-window.addEventListener('keydown', function(e) {
-    if (e.keyCode == 65) {
-        // this.console.log(123);
 
-    }
 
-});
+// window.addEventListener('keydown', function(e) {
+//     if (e.keyCode == 65) {
+//         // this.console.log(123);
+//         this.addEventListener(animateButton, false);
+
+//     }
+
+// });
