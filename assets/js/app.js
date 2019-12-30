@@ -8,19 +8,15 @@ window.addEventListener('keydown', function(e) {
     if (!audio) return;
     audio.currentTime = 0; //audioの再生位置を指定 ==> 連続で再生可能になった
     audio.play();
-    // key.classList.add('playing');
+    key.classList.add('playing');
 
 
 });
 
+function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    this.classList.remove('playing');
+}
 
-
-
-// window.addEventListener('keydown', function(e) {
-//     if (e.keyCode == 65) {
-//         // this.console.log(123);
-//         this.addEventListener(animateButton, false);
-
-//     }
-
-// });
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition));
