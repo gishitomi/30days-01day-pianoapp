@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+    overflow: hidden;
+}
 
 header {
     width: 100%;
@@ -13,6 +16,7 @@ header {
 header h1 {
     font-size: 40px;
 }
+
 header p {
     font-size: 30px;
 }
@@ -34,19 +38,23 @@ main {
     display: flex;
     flex-direction: column;
     transition: all 0.15s;
-    
 }
-.key kbd, .key span {
+
+.key kbd,
+.key span {
     text-align: center;
 }
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .keys {
     display: flex;
 }
+
 .playing {
     transform: scale(1.5);
     border-color: yellow;
